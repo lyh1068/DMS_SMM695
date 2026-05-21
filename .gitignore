@@ -1,2 +1,4 @@
 History.*
 !history.sql
+.DS_Store
+*.md
