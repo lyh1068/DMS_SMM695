@@ -73,6 +73,7 @@ INSERT INTO cities_fk VALUES
 
 INSERT INTO weather_fk VALUES
   ('San Francisco', 46, 50, 0.25, '1994-11-27'),
+  ('San Francisco', 43, 57, 0.0, '1994-11-29'),
   ('Hayward', 37, 54, NULL, '1994-11-29');
 
 -- Many-to-one from the PostgreSQL foreign-key tutorial pattern.
