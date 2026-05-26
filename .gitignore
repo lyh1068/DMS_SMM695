@@ -1,4 +1,5 @@
 History.*
 !history.sql
-.DS_Store
+**/.DS_Store
 *.md
+week3.*

@@ -1,0 +1,16 @@
+services:
+  age:
+    image: apache/age:release_PG16_1.6.0
+    container_name: apache_age
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: demo
+    ports:
+      - "5433:5432"
+    volumes:
+      - agedata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  agedata:

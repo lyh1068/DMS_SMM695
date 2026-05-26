@@ -1,0 +1,15 @@
+services:
+  mongodb:
+    image: mongodb/mongodb-community-server:8.3-ubi9
+    container_name: mongodb83
+    environment:
+      MONGODB_INITDB_ROOT_USERNAME: mongo
+      MONGODB_INITDB_ROOT_PASSWORD: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongodata:
