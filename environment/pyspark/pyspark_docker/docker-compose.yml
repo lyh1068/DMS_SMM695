@@ -1,0 +1,10 @@
+services:
+  pyspark:
+    build: .
+    container_name: pyspark_lab
+    ports:
+      - "8888:8888"
+    environment:
+      JUPYTER_TOKEN: "pyspark"
+    volumes:
+      - ../../../code:/home/jovyan/work
