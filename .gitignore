@@ -2,8 +2,8 @@ History.*
 !history.sql
 **/.DS_Store
 *.md
-week3.*
-week-3*.*
+# week3.*
+# week-3*.*
 week4.*
 week-4*.*
 week5.*
@@ -12,3 +12,4 @@ week6*.*
 week-6*.*
 .venv
 fcp/
+fcp/data
