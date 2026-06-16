@@ -8,8 +8,8 @@ History.*
 # week-4*.*
 # week5.*
 # week-5*.*
-week6*.*
-week-6*.*
+# week6*.*
+# week-6*.*
 .venv
 fcp/data
 *.html
