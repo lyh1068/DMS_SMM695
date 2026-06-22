@@ -13,3 +13,4 @@ History.*
 .venv
 fcp/data
 *.html
+.vscode
