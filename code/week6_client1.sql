@@ -88,6 +88,7 @@ COMMIT;
 SELECT name, balance FROM accounts ORDER BY name;
 -- Alice: 900.00  Bob: 500.00  Wally: 600.00
 
+DROP TABLE IF EXISTS mytab CASCADE;
 CREATE TABLE mytab (class INT, value INT);
 INSERT INTO mytab VALUES (1,10),(1,20),(2,100),(2,200);
 
