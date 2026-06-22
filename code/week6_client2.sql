@@ -23,3 +23,10 @@ FROM iso_inventory WHERE product_id = 1;
 COMMIT;
 
 SELECT 'Client 2: committed. quantity is now 8.' AS note;
+
+BEGIN; SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+SELECT SUM(value) FROM mytab WHERE class = 2;  -- 300
+INSERT INTO mytab VALUES (1, 300);
+COMMIT;
+
+ROLLBACK;

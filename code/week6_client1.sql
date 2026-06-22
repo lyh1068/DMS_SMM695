@@ -87,3 +87,11 @@ COMMIT;
 
 SELECT name, balance FROM accounts ORDER BY name;
 -- Alice: 900.00  Bob: 500.00  Wally: 600.00
+
+CREATE TABLE mytab (class INT, value INT);
+INSERT INTO mytab VALUES (1,10),(1,20),(2,100),(2,200);
+
+BEGIN; SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+SELECT SUM(value) FROM mytab WHERE class = 1;  -- 30
+INSERT INTO mytab VALUES (2, 30);
+COMMIT;
